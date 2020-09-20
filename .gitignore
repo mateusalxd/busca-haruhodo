@@ -1,2 +1,4 @@
 dados
 processos/.ipynb_checkpoints
+node_modules
+dados_fts.db

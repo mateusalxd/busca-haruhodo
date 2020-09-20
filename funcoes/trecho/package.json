@@ -1,0 +1,14 @@
+{
+  "name": "trecho",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "sqlite3": "^5.0.0"
+  },
+  "scripts": {
+    "start": "functions-framework --target=trecho"
+  },
+  "devDependencies": {
+    "@google-cloud/functions-framework": "^1.7.1"
+  }
+}
