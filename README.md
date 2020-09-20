@@ -11,3 +11,7 @@ Pelo fato de serem utilizadas legendas geradas automaticamente, existem palavras
 - [Site do podcast](https://www.b9.com.br/shows/naruhodo/)
 - [Canal no YouTube](https://www.youtube.com/c/cientistica)
 - [Playlist dos episódios](https://www.youtube.com/playlist?list=PLZjaOxYREinv5RgR-T1ObnljITmsPIZWa)
+
+## Resultado
+
+- [Busca Naruhodo](https://busca-naruhodo-nao-oficial.web.app)
