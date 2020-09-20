@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta http-equiv="content-language" content="pt-br">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <title>Busca por episódios do Naruhodo</title>
+
+  <meta name="description" content="Busque pelo conteúdo falado nos episódios do Naruhodo" />
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Busca por episódios do Naruhodo">
+  <meta property="og:description" content="Busque pelo conteúdo falado nos episódios do Naruhodo">
+  <meta property="og:url" content="https://busca-naruhodo-nao-oficial.web.app">
+  <meta property="og:site_name" content="Busca Naruhodo">
+  <meta property="og:image" content="../assets/logo.png">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-178381500-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-178381500-1');
+  </script>
+
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+      Please enable it to continue.</strong>
+  </noscript>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+
+  <footer style="margin: 60px auto 0px auto; text-align: center;">
+    <p>Este trabalho foi montado bom base nas legendas geradas automaticamente pelo YouTube, por esse motivo o resultado
+      não é muito acurado</p>
+    <p><b>Observação</b>: só foram considerados os episódios que estavam disponibilizados no YouTube</p>
+    <p>Algumas fontes oficiais:
+      <a href="https://www.b9.com.br/shows/naruhodo/" target="_blank" rel="noopener noreferrer">Site</a>,
+      <a href="https://open.spotify.com/show/1EAAAOIGupWaGwidmMTTi0" target="_blank"
+        rel="noopener noreferrer">Spotify</a>,
+      <a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9mZWVkcy5mZWVkYnVybmVyLmNvbS9uYXJ1aG9kb3BvZGNhc3Q%3D&hl=pt-BR"
+        target="_blank" rel="noopener noreferrer">Google Podcasts</a>,
+      <a href="https://podcasts.apple.com/br/podcast/naruhodo/id1146613549" target="_blank"
+        rel="noopener noreferrer">Apple Podcasts</a>,
+      <a href="https://pca.st/9iWQ" target="_blank" rel="noopener noreferrer">Pocket Casts</a>,
+      <a href="https://twitter.com/naruhodopodcast" target="_blank" rel="noopener noreferrer">Twitter</a>,
+      <a href="https://www.youtube.com/playlist?list=PLZjaOxYREinv5RgR-T1ObnljITmsPIZWa" target="_blank"
+        rel="noopener noreferrer">YouTube</a>,
+      <a href="https://www.facebook.com/naruhodopodcast/" target="_blank" rel="noopener noreferrer">Facebook</a> e
+      <a href="https://apoia.se/naruhodopodcast" target="_blank" rel="noopener noreferrer">APOIA.se</a>
+    </p>
+  </footer>
+</body>
+
+</html>
