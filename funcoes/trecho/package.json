@@ -6,7 +6,8 @@
     "sqlite3": "^5.0.0"
   },
   "scripts": {
-    "start": "functions-framework --target=trecho"
+    "start": "functions-framework --target=trecho",
+    "deploy": "gcloud functions deploy trecho --allow-unauthenticated --runtime nodejs12 --max-instances 1 --trigger-http"
   },
   "devDependencies": {
     "@google-cloud/functions-framework": "^1.7.1"

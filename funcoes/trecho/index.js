@@ -40,15 +40,25 @@ function consultar(termo) {
 exports.trecho = (req, res) => {
     let termo = req.query.termo || req.body.termo || '';
 
-    if (termo) {
-        consultar(termo)
-            .then((resultado) => {
-                res.status(200).send(resultado);
-            }).catch((erro) => {
-                console.error(erro);
-                res.status(500).send(erro.message);
-            });
+    res.set('Access-Control-Allow-Origin', 'https://busca-naruhodo-nao-oficial.web.app');
+
+    if (req.method === 'OPTIONS') {
+        // Send response to OPTIONS requests
+        res.set('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, HEAD');
+        res.set('Access-Control-Allow-Headers', 'Origin, Content-Type, Content-Length');
+        res.set('Access-Control-Max-Age', '3600');
+        res.status(204).send();
     } else {
-        res.status(400).send();
+        if (termo) {
+            consultar(termo)
+                .then((resultado) => {
+                    res.status(200).send(resultado);
+                }).catch((erro) => {
+                    console.error(erro);
+                    res.status(500).send(erro.message);
+                });
+        } else {
+            res.status(400).send();
+        }
     }
 };
