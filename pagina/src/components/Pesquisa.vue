@@ -6,6 +6,7 @@
         class="campo-pesquisa"
         type="text"
         name="termo"
+        placeholder="Digite um termo a ser pesquisado"
         @input="termo = $event.target.value; mensagem = ''"
         :value="termo"
         ref="nome"
@@ -100,7 +101,7 @@ export default {
           })
           .catch(() => {
             this.mensagem =
-              "Ocorreu um erro ao tentar pesquisar os termos informados";
+              "Ocorreu um erro ao tentar pesquisar o termo informado";
             this.resultado = [];
           });
       } else {
@@ -122,6 +123,7 @@ export default {
 .botao {
   padding: 8px;
   margin: 0 6px;
+  width: 8em;
 }
 
 .mensagem {
@@ -152,7 +154,7 @@ export default {
 .campo-pesquisa {
   padding: 8px;
   margin: 1em;
-  width: 100%;
+  width: 80%;
 }
 
 .tabela-fixa {
